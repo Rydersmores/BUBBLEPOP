@@ -1,21 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Songs</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Card Grid</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5; /* Light grey background */
+        }
+    </style>
 </head>
-<body>
-  <header>
-    
-    <h2>BUBBLEPOP-Songs</h2></header>
-  
-  <h3>under construction</h3></header>
-  
-  <a href="index.html">Go Back to Home</a>
-  <footer>
-                <p>&copy;BUBBLEPOP Records 2025</p>
-    </footer>
+<body class="p-4 sm:p-8">
+    <div class="container mx-auto">
+        <!-- Grid Container -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+
+            <!-- Card 1 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+                <div class="relative w-full h-64 sm:h-72 lg:h-80 overflow-hidden">
+                    <img src="https://placehold.co/600x400/FF5733/FFFFFF?text=Artwork+1" alt="Artwork 1" class="w-full h-full object-cover">
+                </div>
+                <div class="p-4 flex-grow flex flex-col justify-between">
+                    <div>
+                        <p class="text-xl font-semibold text-gray-800 mb-1">Glam by RIFT</p>
+                        <p class="text-sm text-gray-600">Album Title</p>
+                    </div>
+                    <div class="mt-4 text-xs text-gray-500">
+                        <p>Released: 2025</p>
+                        <p>Genre: hyperpop</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+                <div class="relative w-full h-64 sm:h-72 lg:h-80 overflow-hidden">
+                    <img src="https://placehold.co/600x400/33FF57/FFFFFF?text=Artwork+2" alt="Artwork 2" class="w-full h-full object-cover">
+                </div>
+                <div class="p-4 flex-grow flex flex-col justify-between">
+                    <div>
+                        <p class="text-xl font-semibold text-gray-800 mb-1">London Krakow Shanghai by felicita</p>
+                        <p class="text-sm text-gray-600">Single</p>
+                    </div>
+                    <div class="mt-4 text-xs text-gray-500">
+                        <p>Released: 2022</p>
+                        <p>Genre: Experimental</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+                <div class="relative w-full h-64 sm:h-72 lg:h-80 overflow-hidden">
+                    <img src="https://placehold.co/600x400/3357FF/FFFFFF?text=Artwork+3" alt="Artwork 3" class="w-full h-full object-cover">
+                </div>
+                <div class="p-4 flex-grow flex flex-col justify-between">
+                    <div>
+                        <p class="text-xl font-semibold text-gray-800 mb-1">Laptander (Finn Keane Remix) by Finn Keane</p>
+                        <p class="text-sm text-gray-600">Remix</p>
+                    </div>
+                    <div class="mt-4 text-xs text-gray-500">
+                        <p>Released: 2024</p>
+                        <p>Genre: Pop</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 (Larger Image Example) -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+                <div class="relative w-full h-64 sm:h-72 lg:h-80 overflow-hidden">
+                    <img src="https://placehold.co/800x600/FF33A1/FFFFFF?text=Artwork+4" alt="Artwork 4" class="w-full h-full object-cover">
+                </div>
+                <div class="p-4 flex-grow flex flex-col justify-between">
+                    <div>
+                        <p class="text-xl font-semibold text-gray-800 mb-1">Another Pobbles Christmas (Unwrapped) by POBBLES</p>
+                        <p class="text-sm text-gray-600">Holiday Special</p>
+                    </div>
+                    <div class="mt-4 text-xs text-gray-500">
+                        <p>Released: 2021</p>
+                        <p>Genre: Children's</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+                <div class="relative w-full h-64 sm:h-72 lg:h-80 overflow-hidden">
+                    <img src="https://placehold.co/600x400/A133FF/FFFFFF?text=Artwork+5" alt="Artwork 5" class="w-full h-full object-cover">
+                </div>
+                <div class="p-4 flex-grow flex flex-col justify-between">
+                    <div>
+                        <p class="text-xl font-semibold text-gray-800 mb-1">Lost Everything / Reign by Thy Slaughter</p>
+                        <p class="text-sm text-gray-600">EP</p>
+                    </div>
+                    <div class="mt-4 text-xs text-gray-500">
+                        <p>Released: 2023</p>
+                        <p>Genre: Metal</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+                <div class="relative w-full h-64 sm:h-72 lg:h-80 overflow-hidden">
+                    <img src="https://placehold.co/600x400/33FFA1/FFFFFF?text=Artwork+6" alt="Artwork 6" class="w-full h-full object-cover">
+                </div>
+                <div class="p-4 flex-grow flex flex-col justify-between">
+                    <div>
+                        <p class="text-xl font-semibold text-gray-800 mb-1">New Release by Artist X</p>
+                        <p class="text-sm text-gray-600">Single</p>
+                    </div>
+                    <div class="mt-4 text-xs text-gray-500">
+                        <p>Released: 2025</p>
+                        <p>Genre: Ambient</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
 </body>
 </html>
